@@ -34,6 +34,14 @@ data class WeatherItem(
 data class Main(
 
 	@field:SerializedName("temp")
-	val temp: Double? = null
+	val temp: Double? = null,
+
+	@field:SerializedName("temp_max")
+	val tempMax: Double? = null,
+
+	@field:SerializedName("temp_min")
+	val tempMin: Double? = null
+
+
 
 )

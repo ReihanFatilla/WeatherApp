@@ -18,7 +18,7 @@ interface ApiService {
     ) : Call<WeatherResponse>
 
     @GET("forecast")
-    fun forecastBy(
+    fun forecastByCity(
         @Query("q")
         location: String,
         @Query("appid")

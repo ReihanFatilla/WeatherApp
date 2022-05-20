@@ -4,7 +4,8 @@
     android:layout_width="150dp"
     android:layout_height="wrap_content"
     android:layout_marginStart="4dp"
-    android:layout_marginEnd="4dp">
+    android:layout_marginEnd="4dp"
+    app:cardCornerRadius="15dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -12,7 +13,7 @@
         android:padding="8dp">
 
         <TextView
-            android:id="@+id/tv_item_day"
+            android:id="@+id/tv_date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif"
@@ -22,7 +23,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/tv_item_date"
+            android:id="@+id/tv_time"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -30,7 +31,7 @@
             android:text="Feb 12"
             android:textAlignment="center"
             android:textSize="20sp"
-            app:layout_constraintTop_toBottomOf="@id/tv_item_day" />
+            app:layout_constraintTop_toBottomOf="@id/tv_date" />
 
         <ImageView
             android:id="@+id/img_item_weather"
@@ -42,7 +43,7 @@
             app:layout_constraintBottom_toTopOf="@id/tv_max_degree"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_item_date" />
+            app:layout_constraintTop_toBottomOf="@id/tv_time" />
 
         <TextView
             android:id="@+id/tv_max_degree"

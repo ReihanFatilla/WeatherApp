@@ -5,6 +5,7 @@ import android.app.Activity
 import android.os.Build
 import android.view.Window
 import android.view.WindowManager
+import java.math.RoundingMode
 
 object HelperFunction {
 
@@ -19,4 +20,9 @@ object HelperFunction {
         }
     }
 
+    fun formatterDegree(temp: Double?): String{
+        val tempToCels = temp?.minus(273.0)
+        val celciusFormatted = tempToCels?.toBigDecimal()?.setScale(1, RoundingMode.CEILING)
+        return "$celciusFormatted ˚C"
+    }
 }

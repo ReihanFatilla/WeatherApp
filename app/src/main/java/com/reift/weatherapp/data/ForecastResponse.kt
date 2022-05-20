@@ -14,7 +14,7 @@ data class ForecastResponse(
 	val message: Int? = null,
 
 	@field:SerializedName("list")
-	val list: List<ListItem?>? = null
+	val list: List<ListItem>? = null
 )
 
 data class ListItem(
